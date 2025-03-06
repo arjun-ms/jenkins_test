@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     triggers {
-        pollSCM('* * * * *') // Checks for changes in Git every minute
+        githubPush()
     }
 
     stages {
